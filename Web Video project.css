@@ -1,0 +1,146 @@
+/* styles.css */
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #222;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+/* Video Section Styles */
+.video-section {
+    margin-top: 30px;
+}
+
+.video-container {
+    width: 100%;
+    max-width: 720px;
+    margin: 20px auto;
+    position: relative;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+}
+
+/* Gallery Section Styles */
+.gallery-section {
+    margin-top: 40px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    width: 30%;
+    max-width: 250px;
+    margin: 10px;
+    text-align: center; /* Menjaga teks di tengah */
+}
+
+.gallery-item .caption {
+    font-size: 1em;
+    margin-top: 10px;
+    color: #555; /* Warna teks keterangan */
+    font-weight: 500;
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1);
+}
+
+.gallery img {
+    width: 30%;
+    max-width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Header Styles */
+header {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .gallery img {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .gallery img {
+        width: 90%;
+    }
+}
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 0;
+}
